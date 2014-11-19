@@ -1,0 +1,9 @@
+[Core]
+Name = CpuI5
+Module = cpui5
+
+[Documentation]
+Author = Thomas Bergmann
+Version = 0.1
+Website = 
+Description = My first plugin

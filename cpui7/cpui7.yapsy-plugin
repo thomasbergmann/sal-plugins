@@ -1,0 +1,9 @@
+[Core]
+Name = CpuI7
+Module = cpui7
+
+[Documentation]
+Author = Thomas Bergmann
+Version = 0.1
+Website = 
+Description = My first plugin

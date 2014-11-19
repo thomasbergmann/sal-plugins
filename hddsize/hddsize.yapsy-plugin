@@ -1,0 +1,9 @@
+[Core]
+Name = HDDSize
+Module = hddsize
+
+[Documentation]
+Author = Thomas Bergmann
+Version = 0.1
+Website = 
+Description = My first plugin
