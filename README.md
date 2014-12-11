@@ -1,6 +1,6 @@
 sal-plugins
 ===========
-Plugins for Sal (The Munki Puppet). Plugin hddsize not yet working.
+Plugins for Sal (The Munki Puppet).
 
 ## Installation
 
