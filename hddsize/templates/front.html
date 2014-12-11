@@ -5,20 +5,22 @@
         </div>
         <!-- /.panel-heading -->
         <div class="panel-body">
-        <table class="table table-striped table-condensed table-bordered">
-        {% for item in data|dictsort:'sp_boot_volume' %}
-        {% if item.sp_boot_volume %}
-            <tr>
-                <td>
-                    <a href="{% url 'machine_list_front' 'HDDSize' item.sp_boot_volume %}">
-                    {{ item.sp_boot_volume }}
-                    <span class="badge pull-right">{{ item.count }}</span>
-                    </a>
-                </td>
-            </tr>
-            {% endif %}
-        {% endfor %}
-        </table>
-    </div>
-    </div>
+        <a href="{% url 'machine_list_front' plugin '128' %}" class="btn btn-success">
+                        <span class="bigger"> {{ 128_count }} </span><br />
+                        {{ 128_label }}
+          </a>
+	<a href="{% url 'machine_list_front' plugin '256' %}" class="btn btn-success">
+                        <span class="bigger"> {{ 256_count }} </span><br />
+                        {{ 256_label }}
+          </a>
+	<a href="{% url 'machine_list_front' plugin '512' %}" class="btn btn-success">
+                        <span class="bigger"> {{ 512_count }} </span><br />
+                        {{ 512_label }}
+          </a>
+	<a href="{% url 'machine_list_front' plugin '1024' %}" class="btn btn-success">
+                        <span class="bigger"> {{ 1024_count }} </span><br />
+                        {{ 1024_label }}
+          </a>
+</div>
+</div>
 </div>
