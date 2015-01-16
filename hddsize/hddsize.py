@@ -52,18 +52,18 @@ class HDDSize(IPlugin):
 
     def filter_machines(self, machines, data):
 	if data == '128':
-            machines = machines.filter(hd_total__lt=117649480)
+            machines = machines.filter(hd_total__lte=117649480)
             title = 'Machines with 128GB Harddisk'
 
         elif data == '256':
-            machines = machines.filter(hd_total__range=["117649480", "244277768"])
+            machines = machines.filter(hd_total__range=["117649481", "244277768"])
             title = 'Machines with 256GB Harddisk'
 
         elif data == '512':
             machines = machines.filter(hd_total__range=["244277769", "975922975"])
             title = 'Machines with 512GB Harddisk'
 
-	elif data == '1024':
+        elif data == '1024':
             machines = machines.filter(hd_total__gte=975922976)
             title = 'Machines more than 1024GB Harddisk'
 
@@ -71,4 +71,4 @@ class HDDSize(IPlugin):
 	    machines = None
 
         return machines, title
-
+        
